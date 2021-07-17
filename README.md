@@ -1,7 +1,7 @@
 # revibe
 ___Yo... My bot revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games and fun activities.___
  
-https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands
+ # Invite link https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands
 
 **Prefix** `,`
 
@@ -31,6 +31,8 @@ https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&
 **8ball**
 ![8b](https://media.discordapp.net/attachments/865734794297868288/865961517416710174/8ball.png)
 
+
+# Invite link https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands
 
 # Testimonials
 > Bumblebee99#8391 - Epic bot... has everything any server needs.
