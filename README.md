@@ -1,24 +1,37 @@
-Yo My bot Revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games and fun activities,
-![p](https://user-images.githubusercontent.com/60161763/126039549-48a5c84d-d9d0-4330-b9c2-ebf38dd40260.png)
+# revibe
+___Yo... My bot revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games and fun activities.___
 
+**Prefix** `,`
 
+### Table of contents
+1. [Features](#features)
+2. [Exampls](#examples)
+3. [Testimonials](#testimonials)
+4. [Credits](#credit)
 
+# Features
+**Main help**
+![help](https://media.discordapp.net/attachments/865734794297868288/865961091200712744/help_cmd.png)
 
+**Fun commands**
+![fun](https://media.discordapp.net/attachments/865734794297868288/865960511484461056/fun_cmds.png)
 
+**General commands**
+![gen](https://media.discordapp.net/attachments/865734794297868288/865963214969372712/Capture.PNG)
 
+**Moderation commands???**
+![mod](https://media.discordapp.net/attachments/865734794297868288/865963210703241226/Capture2.PNG)
 
+# Examples
+**8ball**
+![8b](https://media.discordapp.net/attachments/865734794297868288/865961517416710174/8ball.png)
 
-General cmds ,Mod cmds + moree. 
+**Calculator**
+![calc](https://media.discordapp.net/attachments/865734794297868288/865961534029824051/calc.png)
 
+# Testimonials
+> Bumblebee99#8391 - Epic bot... has everything any server needs.
 
-
-
-
-
-![l](https://user-images.githubusercontent.com/60161763/126039689-0c8d3bff-6603-4441-89b4-5718889652df.png)
-
-help cmd
-![pp](https://user-images.githubusercontent.com/60161763/126039492-5bc5c523-7988-403f-9808-cd150be0a178.png)
-
-Made by Discord.py
- Thx for reading this anyways lol
+# Credits
+**akhil.daSimpツ#0705** - Bot dev
+**Bumblebee99#8391** - Readme maker
