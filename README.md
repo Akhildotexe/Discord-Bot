@@ -25,11 +25,14 @@ https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&
 ![mod](https://media.discordapp.net/attachments/865734794297868288/865963210703241226/Capture2.PNG)
 
 # Examples
+
+**Calculator**
+![calc](https://media.discordapp.net/attachments/865734794297868288/8659615340298)
+
 **8ball**
 ![8b](https://media.discordapp.net/attachments/865734794297868288/865961517416710174/8ball.png)
 
-**Calculator**
-![calc](https://media.discordapp.net/attachments/865734794297868288/865961534029824051/calc.png)
+24051/calc.png)
 
 # Testimonials
 > Bumblebee99#8391 - Epic bot... has everything any server needs.
