@@ -7,7 +7,7 @@ https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&
 
 ### Table of contents
 1. [Features](#features)
-2. [Exampls](#examples)
+2. [Examples](#examples)
 3. [Testimonials](#testimonials)
 4. [Credits](#credit)
 
