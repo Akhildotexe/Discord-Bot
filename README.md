@@ -1,5 +1,7 @@
 # revibe
 ___Yo... My bot revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games and fun activities.___
+ 
+https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands
 
 **Prefix** `,`
 
