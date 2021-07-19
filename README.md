@@ -1,4 +1,4 @@
-# revibe
+# Revibe
 ___Yo... My bot revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games and fun activities.___
  
  # Invite link https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands
@@ -37,6 +37,6 @@ ___Yo... My bot revibe is a multipurpose bot with a HELL LOTTA fun cmds which in
 # Testimonials
 > Bumblebee99#8391 - Epic bot... has everything any server needs.
 
-# Credits
+# Credit
 **akhil.daSimpツ#0705** - Bot dev
 **Bumblebee99#8391** - Readme maker
