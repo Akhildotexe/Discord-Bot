@@ -10,7 +10,6 @@ from discord_components import DiscordComponents, Button, ButtonStyle, Interacti
 from datetime import timedelta, datetime
 from PIL import Image
 from io import BytesIO
-from webserver import keep_alive
 from discord.ext import commands
 from typing import List
 
@@ -835,5 +834,4 @@ async def CommandNotFound(ctx):
     await ctx.send("error")
 
 
-keep_alive()
 client.run(os.getenv('TOKEN'))
