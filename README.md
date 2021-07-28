@@ -39,4 +39,5 @@ ___Yo... My bot revibe is a multipurpose bot with a HELL LOTTA fun cmds which in
 
 # Credit
 **akhil.daSimpツ#0705** - Bot dev
+**𝑇𝑊𝑄𝑆#8673** Major Bot dev helper
 **Bumblebee99#8391** - Readme maker
