@@ -36,8 +36,11 @@ ___Yo... My bot revibe is a multipurpose bot with a HELL LOTTA fun cmds which in
 
 # Testimonials
 > Bumblebee99#8391 - Epic bot... has everything any server needs.
+> 𝑇𝑊𝑄𝑆#8673 - Epic Bot Dev 
 
 # Credit
-**akhil.daSimpツ#0705** - Bot dev
-**𝑇𝑊𝑄𝑆#8673** Major Bot dev helper
+**akhil.daSimpツ#0705** - Bot Dev
+
+**𝑇𝑊𝑄𝑆#8673** Major Bot Dev helper
+ 
 **Bumblebee99#8391** - Readme maker
