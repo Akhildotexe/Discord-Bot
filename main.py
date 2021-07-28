@@ -17,16 +17,6 @@ if __name__ == '__main__':
 
 DiscordComponents(client)
 load_dotenv('.env')
-#client.load_extension('calc')
-#client.load_extension('fun cmds')
-#client.load_extension('gen cmds')
-#client.load_extension('help cmds')
-#client.load_extension('image cmds')
-#client.load_extension('mod cmds')
-#client.load_extension('errors')
-#client.load_extension('ttt')
-
-
 @client.event
 async def on_ready():
     global up_time
