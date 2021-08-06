@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 client = commands.Bot(command_prefix=(","),help_command=None,activity=discord.Activity(type=discord.ActivityType.listening,name=" to ,help | Ping Me"),intents=discord.Intents.all())
 
 
-cogs = ('cogs.errors', 'cogs.help cmds', 'cogs.calc', 'cogs.gen cmds','cogs.fun cmds','cogs.image cmds','cogs.mod cmds','cogs.ttt')
+cogs = ('cogs.errors', 'cogs.help cmds', 'cogs.calc', 'cogs.gen cmds','cogs.fun cmds','cogs.image cmds','cogs.mod cmds','cogs.ttt','cogs.botserver','cogs.ticket')
 if __name__ == '__main__':
   for ex in cogs:
     client.load_extension(ex)
