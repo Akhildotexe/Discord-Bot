@@ -39,8 +39,8 @@ __revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games, 
 > 𝑇𝑊𝑄𝑆#8673 - Epic Bot Dev 
 
 # Credit
-**akhil.daSimpツ#0705** - Bot Dev
+> **akhil.daSimpツ#0705** - Bot Dev
 
-**𝑇𝑊𝑄𝑆#8673** Major Bot Dev helper
+> **𝑇𝑊𝑄𝑆#8673** Major Bot Dev helper
  
-**Bumblebee99#8391** - Readme maker
+> **Bumblebee99#8391** - Readme maker
