@@ -1,5 +1,5 @@
 # Revibe
-__revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games, Mod Cmds and fun activities.___
+_revibe is a multipurpose bot with a HELL LOTTA fun cmds which include, Games, Mod Cmds and fun activities._
  
  # Invite link https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands
 
