@@ -3,6 +3,7 @@ from discord import Embed
 from discord.errors import PrivilegedIntentsRequired
 from discord.ext import commands
 from datetime import datetime, timedelta
+from discord_components import *
 
 class colc(commands.Cog):
   def __init__(self, client):
@@ -13,7 +14,18 @@ class colc(commands.Cog):
   async def help(self,ctx):
     kk=discord.Embed(title= 'Help page/Click me for updates <:rdannythinking:759935024123871283> ' ,url='https://discord.gg/5HktqCkYHY ' ,description="Bot prefix = [`,`] \n \n `,invite` invite my bot to your server.\n \n `,fun` for games.\n \n `,gen` general commands.\n \n `,math` for math cmds. \n \n `,mod` for moderation cmds.", color=0x00d6e6,timestamp=ctx.message.created_at)
     #embed.set_footer(name=f"Requested by {ctx.author.display_name}!", icon_url=ctx.author.avatar_url)
-    await ctx.reply(embed=kk)
+    em2= self.client.get_emoji(865978943055462440)
+    server='https://discord.gg/5HktqCkYHY'
+    components = [
+            Button(label = "Support Server", custom_id = "server", style = 5,url=f"{server}",emoji=em2)
+         ]
+      
+   
+    await ctx.send(embed=kk, components=components)
+    interaction = await self.client.wait_for("button_click", check = lambda i: i.custom_id == "server")
+    await interaction.send(components)
+   
+
 
 
   @commands.Cog.listener()
@@ -24,10 +36,25 @@ class colc(commands.Cog):
             await message.reply(embed=embed)
 
 
-  @commands.command()
+  @commands.command(aliases=['inv'])
   async def invite(self,ctx):
-    invite=discord.Embed(description="https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands\n \nhttps://discord.gg/5HktqCkYHY", color=0x00ff7b)
-    await ctx.send(embed=invite)
+    link='https://discord.com/oauth2/authorize?client_id=841300946973622303&permissions=0&scope=bot%20applications.commands'
+    support_server='https://discord.gg/5HktqCkYHY'
+    invite=discord.Embed(description="Made by `akhil.daSimpツ#0002` feel free to dm me! https://discord.com/users/476120200153137154 ", color=0x00ff7b)
+    em1= self.client.get_emoji(891101245769658389)
+    em2= self.client.get_emoji(865978943055462440)
+    components = [[
+            Button(label = "Invite Me!", custom_id = "invite", style = 5, url=f"{link}",emoji=em1),
+            Button(label = "Support Server", custom_id = "server", style = 5,url=f"{support_server}",emoji=em2)
+         ]]
+      
+
+    await ctx.send(embed=invite, components=components)
+    interaction = await self.client.wait_for("button_click", check = lambda i: i.custom_id == "invite")
+    interaction = await self.client.wait_for("button_click", check = lambda i: i.custom_id == "server")
+    await interaction.send(components)
+
+    
 
 
   @commands.group()
