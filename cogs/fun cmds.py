@@ -1,6 +1,7 @@
 import discord
 import random
 import aiohttp
+import json
 from discord import Embed
 from discord.ext import commands
 from datetime import datetime, timedelta
@@ -9,7 +10,9 @@ class colc(commands.Cog):
   def __init__(self, client):
     self.client = client
 
- 
+#####################################################################################
+    
+    
   @commands.command(aliases=['8ball'])
   async def d8ball(self,ctx, *, question):
         responses = ['As I see it, yes.',
@@ -27,6 +30,7 @@ class colc(commands.Cog):
                 'only on thursdays.',
                 'Perhaps.',
                 'Not Sure',
+                "ahh hell nahh",
                 'Maybye',
                 'I cannot predict now.',
                 'Im to lazy to predict.',
@@ -35,7 +39,7 @@ class colc(commands.Cog):
         embed=discord.Embed(name=ctx.author.display_name,title="The Magic 8 Ball has Spoken!", color=(0x060505))
         embed.add_field(name='Question: ', value=f'{question}', inline=True)
         embed.add_field(name='Answer: ', value=f'{response}', inline=False)
-        await ctx.send(embed=embed)
+        await ctx.reply(embed=embed)
     
     
     
@@ -84,7 +88,7 @@ class colc(commands.Cog):
         "Yo mama so fat that when she went to Wendy's they had to call burger king for help"]
         embed = discord.Embed(title = "Yo Mama Roasted <:PepePoint:759934591590203423>",
         description=random.choice(jokes), color = (0x00ff33))
-        await ctx.send(embed=embed)
+        await ctx.reply(embed=embed)
     
     
     
@@ -99,35 +103,35 @@ class colc(commands.Cog):
     
     
   @commands.command()
-  async def google(ctx, a):
+  async def google(self,ctx, a):
         await ctx.reply(f'https://google.com/?q={a}')
     
     
   @commands.command()
-  async def animesearch(ctx, args):
+  async def animesearch(self,ctx,args):
         await ctx.reply(f'https://www.crunchyroll.com/search?from=&q={args}')
     
     
   @commands.command()
-  async def yt(ctx, args):
+  async def yt(self,ctx,args):
         await ctx.reply(f'https://www.youtube.com/results?search_query={args}')
     
     
   @commands.command()
-  async def ig(ctx, args):
+  async def ig(self,ctx,args):
         await ctx.reply(f'https://www.instagram.com/{args}/')
     
   @commands.command()
-  async def amazon(ctx, args):
+  async def amazon(self,ctx,args):
         await ctx.reply(f'https://www.amazon.com/s?k={args}')
     
   @commands.command()
-  async def urban(ctx, args):
+  async def urban(self,ctx,args):
         await ctx.reply(f'https://www.urbandictionary.com/define.php?term={args}')
     
   @commands.command()
   async def downloadyt(self,ctx,args):
-        await ctx.send("https://www.y2mate.com/youtube/{args}")
+        await ctx.reply("https://www.y2mate.com/youtube/{args}")
     
     
     
@@ -138,13 +142,13 @@ class colc(commands.Cog):
   @commands.command()
   async def rnum(self,ctx):
         embed = discord.Embed(title = "Random Number", description = (random.randint(1, 101)), color = (0x00ff33))
-        await ctx.send(embed = embed)
+        await ctx.reply(embed = embed)
     
     
   @commands.command()
   async def rdice(self,ctx):
         embed = discord.Embed(title = "You Rolled Your Dice", description = (random.randint(1, 6)), color = (0x00ff33))
-        await ctx.send(embed = embed)
+        await ctx.reply(embed = embed)
     
     
   @commands.command()
@@ -161,7 +165,7 @@ class colc(commands.Cog):
     
     
   @commands.command()
-  async def ogmeme(ctx):
+  async def ogmeme(self,ctx):
         embed = discord.Embed(title="More Memes", color = (0x00ff33))
     
         async with aiohttp.ClientSession() as cs:
@@ -172,7 +176,7 @@ class colc(commands.Cog):
     
     
   @commands.command()
-  async def planes(ctx):
+  async def planes(self,ctx):
         embed = discord.Embed(title="Planes", color = (0x00ff33))
      
         async with aiohttp.ClientSession() as cs:
@@ -183,8 +187,8 @@ class colc(commands.Cog):
     
     
   @commands.command()
-  async def cat(ctx):
-        embed = discord.Embed(title="Cats", color = (0x00ff33))#
+  async def cat(self,ctx):
+        embed = discord.Embed(title="Cats", color = (0x00ff33))
     
         async with aiohttp.ClientSession() as cs:
             async with cs.get('https://aws.random.cat/meow') as r:
@@ -193,6 +197,28 @@ class colc(commands.Cog):
                 await ctx.send(embed=embed)
 
 
+  @commands.command()
+  async def urbantest(self,ctx,args):
+        
+        embed = discord.Embed(title="test", color = (0x00ff33))
+    
+        async with aiohttp.ClientSession()as cs :
+              
+            async with self.session.get(f'http://www.urbandictionary.com/new.json?define.php?term={args}') as r:              
+                res = await r.json()
+                data = await r.read()
+                r = json.loads(data)
+                embed=discord.Embed(title= 'Heres your meme', color=0x00ff33)
+                embed.set_image(url=res['data']['children'] [random.randint(0, 25)]['data']['url'])
+                await ctx.reply(embed=embed)
+
+
+  @commands.command()
+  async def yt(self, ctx):
+        link = await self.togetherControl.create_link(ctx.author.voice.channel.id, 'youtube')
+        await ctx.send(f"Click the blue link!\n{link}")
+
+        
 
 def setup(client):
   client.add_cog((colc(client)))
