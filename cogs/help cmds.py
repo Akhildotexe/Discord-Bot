@@ -4,6 +4,7 @@ from discord.errors import PrivilegedIntentsRequired
 from discord.ext import commands
 from datetime import datetime, timedelta
 from discord_components import *
+import asyncio
 
 class colc(commands.Cog):
   def __init__(self, client):
