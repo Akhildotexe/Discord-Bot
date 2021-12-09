@@ -1,10 +1,9 @@
 import discord
-from discord import Embed
-from discord.errors import PrivilegedIntentsRequired
 from discord.ext import commands
 from datetime import datetime, timedelta
 from discord_components import *
 import asyncio
+
 
 class colc(commands.Cog):
   def __init__(self, client):
@@ -13,7 +12,11 @@ class colc(commands.Cog):
 
   @commands.command()
   async def help(self,ctx):
-    kk=discord.Embed(title= 'Help page/Click me for updates <:rdannythinking:759935024123871283> ' ,url='https://discord.gg/5HktqCkYHY ' ,description="Bot prefix = [`,`] \n \n `,invite` invite my bot to your server.\n \n `,fun` for games.\n \n `,gen` general commands.\n \n `,math` for math cmds. \n \n `,mod` for moderation cmds.", color=0x00d6e6,timestamp=ctx.message.created_at)
+    kk=discord.Embed(title= 'Help page/Click me for updates <:rdannythinking:759935024123871283> ' \
+        ,url='https://discord.gg/5HktqCkYHY ' ,description="Bot prefix = [`,`] \n \
+        \n `,invite` invite my bot to your server.\n \n `,fun` for games.\n \n `,gen` general commands.\n\
+        \n `,math` for math cmds. \n\
+        \n `,mod` for moderation cmds.", color=0x00d6e6,timestamp=ctx.message.created_at)
     #embed.set_footer(name=f"Requested by {ctx.author.display_name}!", icon_url=ctx.author.avatar_url)
     em2= self.client.get_emoji(865978943055462440)
     server='https://discord.gg/5HktqCkYHY'
@@ -61,7 +64,16 @@ class colc(commands.Cog):
   @commands.group()
   async def fun(self,ctx):
     if ctx.invoked_subcommand is None:
-      embed=discord.Embed(name=ctx.author.display_name,title=' :video_game: type :arrow_down::arrow_down: cmds for more info', description="\n \n`,fun ttt` how to play tictactoe!\n \n `,fun 8ball` how to use 8ball cmd! \n \n `,fun rnum` how to use random number generator. \n \n `,fun rolldice` how to use the roll dice cmd. \n \n `,fun memes` how to get memes! \n \n `,fun memez` more funnier memes. \n \n `,fun yjokes` yo mama jokes! \n \n `,fun googleit` to search google! \n \n `,fun youtube` to search youtube! \n \n `,fun insta` to search instagram!", color=0x00ff33)
+      embed=discord.Embed(name=ctx.author.display_name,title=' :video_game: type `,fun + cmd` to learn more about a cmd ex `,fun ttt`', description="```yaml\n\
+ > `,ttt` how to play tictactoe!\n\
+           \n > `,8ball` how to use 8ball cmd! \n\
+           \n > `,rnum` how to use random number generator. \n\
+           \n > `,rolldice` how to use the roll dice cmd. \n\
+           \n > `,memes` how to get memes! \n\
+           \n > `,yjokes` yo mama jokes! \n\
+           \n > `,googleit` to search google! \n\
+           \n > `,youtube` to search youtube! \n\
+           \n > `,insta` to search instagram! \n``` ", color=0x00ff33)
       await ctx.reply(embed=embed)
 
   @fun.command() 
@@ -134,7 +146,14 @@ class colc(commands.Cog):
   @commands.group()
   async def gen(self,ctx):
     if ctx.invoked_subcommand is None:
-        embed=discord.Embed(name=ctx.author.display_name,title="General Cmds" , description=" `,gen botinfo` to see how many servers bot's in and cool stuff. \n \n`,uptime` to find out bots uptime/ how long its running. \n \n `,gen user` to get info abt users join date, etc. \n \n`,gen avatar` how to get a users pfp. \n \n `,gen serverinfo` how to get server info. \n \n `,gen poll` how to make a poll. \n \n `,gen embedinfo` for how to create a embed.",color=0xbb00ff)
+        embed=discord.Embed(name=ctx.author.display_name,title="General Cmds type `,gen + cmd` to learn more about a cmd ex `,gen poll`' " , description="```yaml\n\ \
+             \n > `,botinfo` to see how many servers bot's in and cool stuff. \n\
+             \n > `,uptime` to find out bots uptime/ how long its running. \n\
+             \n > `,whois` to get info abt users join date, etc. \n\
+             \n > `,pfp` how to get a users pfp. \n\
+             \n > `serverinfo` how to get server info. \n\
+             \n > `,poll` how to make a poll. \n\
+             \n > `,embed` for how to create a embed. \n ``` ",color=0xbb00ff)
         await ctx.reply(embed=embed)
 
   @gen.command()
