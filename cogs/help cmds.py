@@ -65,15 +65,16 @@ class colc(commands.Cog):
   async def fun(self,ctx):
     if ctx.invoked_subcommand is None:
       embed=discord.Embed(name=ctx.author.display_name,title=' :video_game: type `,fun + cmd` to learn more about a cmd ex `,fun ttt`', description="```yaml\n\
- > `,ttt` how to play tictactoe!\n\
-           \n > `,8ball` how to use 8ball cmd! \n\
-           \n > `,rnum` how to use random number generator. \n\
-           \n > `,rolldice` how to use the roll dice cmd. \n\
-           \n > `,memes` how to get memes! \n\
-           \n > `,yjokes` yo mama jokes! \n\
-           \n > `,googleit` to search google! \n\
-           \n > `,youtube` to search youtube! \n\
-           \n > `,insta` to search instagram! \n``` ", color=0x00ff33)
+ > `,ttt` how to play tictactoe: \n\
+           \n > `,8ball` 8ball cmd: \n\
+           \n > `,rnum` random number generator: \n\
+           \n > `,rolldice` roll dice cmd: \n\
+           \n > `,memes` Memessssss: \n\
+           \n > `,yjokes` yo mama jokes: \n\
+           \n > `,googleit` search up stuff on google and get results: \n\
+           \n > `,youtube` search up stuff on youtube and get results: \n\
+           \n > `,insta` search up stuff on instagram and get results: \n\
+           \n > `,urban` search up stuff on the urban dictonary and get results: ```", color=0x00ff33)
       await ctx.reply(embed=embed)
 
   @fun.command() 
@@ -146,14 +147,14 @@ class colc(commands.Cog):
   @commands.group()
   async def gen(self,ctx):
     if ctx.invoked_subcommand is None:
-        embed=discord.Embed(name=ctx.author.display_name,title="General Cmds type `,gen + cmd` to learn more about a cmd ex `,gen poll`' " , description="```yaml\n\ \
-             \n > `,botinfo` to see how many servers bot's in and cool stuff. \n\
-             \n > `,uptime` to find out bots uptime/ how long its running. \n\
-             \n > `,whois` to get info abt users join date, etc. \n\
-             \n > `,pfp` how to get a users pfp. \n\
-             \n > `serverinfo` how to get server info. \n\
-             \n > `,poll` how to make a poll. \n\
-             \n > `,embed` for how to create a embed. \n ``` ",color=0xbb00ff)
+        embed=discord.Embed(name=ctx.author.display_name,title=" `,gen + cmd` to learn more about a cmd ex `,gen poll` " , description="```yaml\n\ \
+             \n > `,botinfo` Check bots stats: \n\
+             \n > `,uptime` to find out bots uptime/ how long its running: \n\
+             \n > `,whois` to get info abt users join date etc: \n\
+             \n > `,pfp` how to get a users pfp: \n\
+             \n > `serverinfo` how to get server info: \n\
+             \n > `,poll` how to make a poll: \n\
+             \n > `,embed` for how to create a embed: \n ``` ",color=0xbb00ff)
         await ctx.reply(embed=embed)
 
   @gen.command()
